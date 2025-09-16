@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyReal09_Bridge
 {
-    class Blue : Color
+    interface Color
     {
-        public string GetColor()
-        {
-            return "Blue";
-        }
+        string GetColor();
     }
 }

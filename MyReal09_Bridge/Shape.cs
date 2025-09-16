@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyReal09_Bridge
 {
-    class Blue : Color
+    abstract class Shape
     {
+        public Color color { get; set; }
+
         public string GetColor()
         {
-            return "Blue";
+            return color.GetColor();
         }
     }
 }
