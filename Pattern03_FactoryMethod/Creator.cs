@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Pattern03_FactoryMethod
 {
-    class ConcreteCreatorA : Creator
+    abstract class Creator
     {
-        public override Product FactoryMethod()
-        {
-            return new ConcreteProductA();
-        }
+        public abstract Product FactoryMethod();
     }
 }
