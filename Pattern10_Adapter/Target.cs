@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Pattern10_Adapter
 {
-    public class Adaptee
+    public class Target
     {
-        public void SpecificRequest()
+        public virtual void Request()
         {
-            Console.WriteLine("Called SpecificRequest()");
+            Console.WriteLine("Called Target Request()");
         }
     }
 }
