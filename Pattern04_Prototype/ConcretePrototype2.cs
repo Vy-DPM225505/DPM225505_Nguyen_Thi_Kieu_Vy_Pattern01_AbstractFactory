@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Pattern04_Prototype
 {
-    public class ConcretePrototype1 : Prototype
+    public class ConcretePrototype2 : Prototype
     {
         // Constructor
-        public ConcretePrototype1(string id)
+        public ConcretePrototype2(string id)
             : base(id)
         {
         }
