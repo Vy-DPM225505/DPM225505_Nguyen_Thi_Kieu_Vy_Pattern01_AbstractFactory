@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyReal03_FactoryMethod
 {
-    class Bibliography : Page
+    class Skills : Page
     {
     }
 }
