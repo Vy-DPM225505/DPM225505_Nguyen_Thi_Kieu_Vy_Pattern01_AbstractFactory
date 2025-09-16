@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Real01_AbstractFactory
 {
-    abstract class ContinentFactory
+    class Wildebeest : Herbivore
     {
-        public abstract Herbivore CreateHerbivore();
-        public abstract Carnivore CreateCarnivore();
     }
 }
