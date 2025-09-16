@@ -1,0 +1,32 @@
+﻿using MyReal02_Builder;
+
+using System;
+using System.Collections.Generic;
+namespace MyReal02_Builder
+{
+    /// <summary>
+    /// MainApp startup class for Real-World 
+    /// Builder Design Pattern.
+    /// </summary>
+    public class MainApp
+    {
+        /// <summary>
+        /// Entry point into console application.
+        /// </summary>
+        public static void Main()
+        {
+            VehicleBuilder builder;
+            // Create shop with vehicle builders
+            Shop shop = new Shop();
+            // Construct and display vehicles
+            builder = new OtoCycleBuilder();
+            shop.Construct(builder);
+            builder.Vehicle.Show();
+            builder = new XeDapBuilder();
+            shop.Construct(builder);
+            builder.Vehicle.Show();
+            // Wait for user
+            Console.ReadKey();
+        }
+    }
+}
