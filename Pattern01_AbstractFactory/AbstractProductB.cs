@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Pattern01_AbstractFactory
 {
-    abstract class AbstractFactory
+    abstract class AbstractProductB
     {
-        public abstract AbstractProductA CreateProductA();
-        public abstract AbstractProductB CreateProductB();
+        public abstract void Interact(AbstractProductA a);
     }
 }
