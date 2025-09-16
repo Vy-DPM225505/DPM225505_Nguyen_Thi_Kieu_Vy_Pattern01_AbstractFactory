@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace Pattern09_Bridge
 {
-    public class Abstraction
+    public class RefinedAbstraction : Abstraction
     {
-        protected Implementor implementor;
-        public Implementor Implementor
-        {
-            set { implementor = value; }
-        }
-        public virtual void Operation()
+        public override void Operation()
         {
             implementor.Operation();
         }
     }
-
 }
